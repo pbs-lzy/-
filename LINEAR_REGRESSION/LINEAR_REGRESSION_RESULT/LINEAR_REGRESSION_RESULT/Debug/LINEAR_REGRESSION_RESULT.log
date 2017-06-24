@@ -1,0 +1,20 @@
+﻿  LINEAR_REGRESSION_RESULT.cpp
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(19): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(26): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(28): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(33): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(42): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(44): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(46): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1195): note: 参见“fscanf”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(59): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\users\liu\documents\visual studio 2017\projects\linear_regression_result\linear_regression_result\linear_regression_result.cpp(40): warning C4101: “a”: 未引用的局部变量
+  LINEAR_REGRESSION_RESULT.vcxproj -> c:\users\liu\documents\visual studio 2017\Projects\LINEAR_REGRESSION_RESULT\Debug\LINEAR_REGRESSION_RESULT.exe
+  LINEAR_REGRESSION_RESULT.vcxproj -> c:\users\liu\documents\visual studio 2017\Projects\LINEAR_REGRESSION_RESULT\Debug\LINEAR_REGRESSION_RESULT.pdb (Partial PDB)
