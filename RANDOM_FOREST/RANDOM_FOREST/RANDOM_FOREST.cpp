@@ -31,17 +31,19 @@ string g_stTrainPath = "C:\\Users\\LIU\\Desktop\\classification\\train_data.txt"
 string g_stTestPath = "C:\\Users\\LIU\\Desktop\\classification\\test_data.txt";
 string g_stPredictionPath = "C:\\Users\\LIU\\Desktop\\classification\\preds.txt";
 
-//	打开测试文件
+//	存储预测结果
 static int prediction[NUMBER_OF_TEST_SAMPLES][NUMBER_OF_TREES];
 
+//	样本
 struct CSample {
 	int m_nLabel;
 	map<int, double> m_mFeaturesAndValues;
 };
 
+//	存储测试集合
 vector<CSample> testSet;
 
-
+//	结点
 class CNode {
 public:
 	CNode() {}
@@ -304,6 +306,7 @@ private:
 	int m_nJudge;
 };
 
+//	预测结点，提取CNode部分信息提高效率
 struct CPredictNode
 {
 public:
@@ -324,6 +327,7 @@ public:
 	int m_nJudge;
 };
 
+//	决策树
 class CDecisionTree {
 public:
 	CDecisionTree(vector<CSample> samples) {
@@ -455,8 +459,6 @@ private:
 	vector<CPredictNode> m_vPNodes;
 };
 
-mutex mtx;
-
 void thread1(int start)
 {
 	for (int r = start; r < start + NUMBER_OF_TREES / NUMBER_OF_THREAD; r++) {
@@ -512,7 +514,8 @@ void thread1(int start)
 
 int main()
 {
-	FILE *fptest = fopen(g_stTrainPath.c_str(), "r");
+	//	打开测试数据
+	FILE *fptest = fopen(g_stTestPath.c_str(), "r");
 	if (!fptest) {
 		cout << "file " + g_stTrainPath + " open fail." << endl;
 		return 0;
@@ -536,6 +539,7 @@ int main()
 
 	double start = clock();
 
+	//	并行化建立随机森林
 	thread* threads = new thread[NUMBER_OF_THREAD];
 	for (int i = 0; i < NUMBER_OF_THREAD; i++) {
 		threads[i] = thread(thread1, NUMBER_OF_TREES / NUMBER_OF_THREAD * i);
