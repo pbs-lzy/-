@@ -1,4 +1,4 @@
-// LINEAR_REGRESSION_RESULT.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// LINEAR_REGRESSION_RESULT.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
@@ -28,7 +28,7 @@ int main()
 	fscanf(fptry, "%lf", &theta[383]);
 	fclose(fptry);
 
-	//	read the train set
+	//	read the test set
 	FILE *fptest;
 	fptest = fopen("C:\\Users\\LIU\\Desktop\\dataMining\\save_test.csv", "r");
 	if (!fptest) {
